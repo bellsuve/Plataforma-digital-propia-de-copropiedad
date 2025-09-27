@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portal Copropiedad - Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Portal Copropiedad — Demo</h1>
+    <div class="controls">
+      <div class="pill" id="userTag">Usuario: Invitado</div>
+      <button class="pill" id="exportBtn">Exportar JSON</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <nav>
+      <div class="card">
+        <ul id="menu">
+          <li data-view="dashboard" class="active">Dashboard</li>
+          <li data-view="calendar">Calendario & Reservas</li>
+          <li data-view="rent">Rentar/Fracciones</li>
+          <li data-view="maintenance">Mantenimiento</li>
+          <li data-view="voting">Votaciones</li>
+          <li data-view="settings">Ajustes</li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section id="dashboard" class="card view"></section>
+      <section id="calendar" class="card view" style="display:none"></section>
+      <section id="rent" class="card view" style="display:none"></section>
+      <section id="maintenance" class="card view" style="display:none"></section>
+      <section id="voting" class="card view" style="display:none"></section>
+      <section id="settings" class="card view" style="display:none"></section>
+    </main>
+  </div>
+
+  <footer>
+    Demo local — datos guardados en localStorage.<br />
+    Para integrar backend, API o autenticación pide que lo adapte.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
